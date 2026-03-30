@@ -1,5 +1,14 @@
 # Informe de la Práctica 2: Sistema de Pinza Robótica
 
+## Portada
+
+- Nombre: Martin Peñalva Artázcoz
+- Titulación: Grado de Tecnologías Digitales para la Empresa
+- Asignatura: Sistemas Operativos
+- Práctica: 2
+
+![UBU Logo](images/UBU_logo_0_5.svg)
+
 ## 1. Funcionamiento del programa (pinza.cpp)
 El programa desarrollado en C++ tiene como objetivo procesar y analizar datos de telemetría de una pinza robótica. Su funcionamiento se divide en las siguientes fases:
 
@@ -158,16 +167,6 @@ Para documentar la ejecución correcta del sistema, se deben incluir las siguien
 4. **Código fuente en el IDE**: Captura del entorno de desarrollo mostrando el código de `pinza.cpp` y `ejecutar.sh`.
 
 ### Imágenes incluidas
-
-![datos_pinza](images/datospinzatxt.png)
-
-![ejecutar_sh](images/ejecutarSH.png)
-
-![fin_ejecucion](images/finejecucion.png)
-
-![pinza_cpp_salida](images/pinzaCPP_salida.png)
-
-![pinza_cpp](images/pinzaCPP.png)
 
 ![resultado_ejecucion1](images/resultadoejecucion1.png)
 
