@@ -9,6 +9,15 @@
 
 ![UBU Logo](images/UBU_logo_0_5.svg)
 
+## Índice
+
+1. [Funcionamiento del programa (pinza.cpp)](#1-funcionamiento-del-programa-pinzacpp)
+2. [Explicación del script en Bash (ejecutar.sh)](#2-explicación-del-script-en-bash-ejecutarsh)
+3. [Capturas de pantalla de ejecución](#3-capturas-de-pantalla-de-ejecución)
+4. [Interpretación de resultados](#4-interpretación-de-resultados)
+5. [Enlace al repositorio Git](#5-enlace-al-repositorio-git)
+6. [Instrucciones de ejecución](#6-instrucciones-de-ejecución)
+
 ## 1. Funcionamiento del programa (pinza.cpp)
 El programa desarrollado en C++ tiene como objetivo procesar y analizar datos de telemetría de una pinza robótica. Su funcionamiento se divide en las siguientes fases:
 
@@ -179,3 +188,35 @@ Los resultados permiten identificar fallos en el agarre de la pinza robótica. U
 
 ## 5. Enlace al repositorio Git
 [Repositorio del Proyecto - GitHub](https://github.com/martinPenalva/Practica2_Martin_Penalva.git)
+
+## 6. Instrucciones de ejecución
+Para ejecutar el sistema de pinza robótica, sigue los siguientes pasos:
+
+### 6.1 Requisitos previos
+- Sistema operativo Linux o similar con Bash.
+- Compilador g++ instalado (parte de GCC).
+- Archivos necesarios: `pinza.cpp`, `ejecutar.sh`, `datos_pinza.txt`.
+
+### 6.2 Ejecución automática con el script
+1. Abre una terminal en el directorio del proyecto.
+2. Otorga permisos de ejecución al script: `chmod +x ejecutar.sh`
+3. Ejecuta el script: `./ejecutar.sh`
+
+El script se encargará de:
+- Compilar `pinza.cpp` con `g++ pinza.cpp -o pinza`.
+- Ejecutar el programa en segundo plano.
+- Esperar a que termine y mostrar el PID.
+- Verificar si el proceso terminó correctamente.
+
+### 6.3 Ejecución manual
+Si prefieres ejecutar manualmente:
+1. Compila el programa: `g++ pinza.cpp -o pinza`
+2. Ejecuta el programa: `./pinza`
+
+### 6.4 Archivos generados
+Después de la ejecución, se generará `resultado_pinza.txt` con los resultados del análisis.
+
+### 6.5 Verificación
+- Comprueba que `datos_pinza.txt` existe y tiene el formato correcto (ID galga fuerza_izq fuerza_der).
+- Si hay errores de compilación, verifica que g++ esté instalado.
+- El programa debe ejecutarse sin errores y generar el archivo de salida.
